@@ -4,7 +4,7 @@ This is my professional Portfolio, where my projects are showcased showing off w
 
 ## Deployed Link
 
-[Click Here To View My Portfolio](Type here)
+[Click Here To View My Portfolio](https://jasiela22.github.io/Professional-Portfolio/)
 
 ## Appearance 
 
