@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Alata");
+:root {
+    --LightB: #add8e6;
+    --black: #000000;
+    --Main-color: #2a62c9;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif
+}
+html{
+    font-size: 15px;
+    font-family: "Alata", Arial, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--LightB);
+}
+header{
+    display: inline-block;
+    align-items: top;
+    padding: 1%;
+    width: 100%;
+    height: 200px;
+    background-color: var(--Main-color);
+}
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    border: 2px solid var(--black);
+    left: 10px;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.jasi{                  /*Changes color of Jasi in title*/
+    color: darkgrey;
+}
+#pfp{
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: 60px;
+    border: 5px var(--black);
+}
+#quote{
+    position: absolute;
+    right: 5px;
+    font-size: 25px;
+    background-color: darkgray;
+    padding: 10px;
+}
+/* Navigation bar Top right*/
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    list-style: none;
+    cursor: pointer;
+    flex-wrap: wrap;
+  }
+nav a {
+    color: var(--black);
+    text-decoration: underline 3px var(--black);
+    padding-right: 10px;
+}
+nav a:hover {
+    color: #fff;
+    transition: 0.50s;
+  }
+  /*About Me section Container*/
+.section-container{
+    display: flex;
+    margin: 3% 10%;
+  }
+.section-title{
+    width: 25%;
+    border-right: 5px solid black;
+    text-align: right;
+    font-size: 40px;
+    padding-right: 35px;
+}
+.section-content{
+    width: 75%;
+    margin-left: 40px;
+}
+.section-content p{
+    font-size: 25px;
+}
+/*Project Section - Images with links to projects*/
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-item{
+    position: relative;
+    width: 48%;
+    margin: 1%;
+    border: 5px solid var(--Main-color);
+}
+.project-item.main-img{     /*main image*/
+    width: 100%;
+}
+.project-item img{
+    width: 100%;
+    cursor: pointer;
+}
+.project-item img:hover{
+    opacity: 0.5;
+    transition: 0.50s;
+}
+.caption{
+    position: absolute;
+    bottom: 10%;
+    left: 0px;
+    width: 40%;
+    height: 50px;
+    background-color: var(--Main-color);
+    color: white; 
+    text-align: center;
+}
+.caption:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+/*Contact me section with functional links (Coming Soon)*/
+.contacts{
+    margin-top: 2%;
+}
+.contacts li{
+    display: inline;
+    font-size: 200%;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.contacts a{
+    color: var(--black);
+    text-decoration: underline 3px var(--Main-color);
+}
+.contacts a:hover {
+    color:grey;
+    transition: 0.50s;
+}
+@media screen and (max-width: 768px) {
+  header {
+    margin: 80px 0 0;
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 1200px;
+  }
+  nav ul{
+    position: relative;
+    top: auto;
+  }
+}
